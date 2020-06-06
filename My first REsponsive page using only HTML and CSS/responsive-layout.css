@@ -1,0 +1,184 @@
+body
+{
+    margin: auto 0;
+}
+
+.header
+{
+    display: flex;
+    background-color: aquamarine;
+    padding : 10px;
+    justify-content: center;
+    align-items: center;
+    font-size: 5em;
+    color: aliceblue;
+}
+
+@media only screen and (max-width:700px)
+{
+    .header
+    {
+        font-size: 2.5em;
+        padding : 2px;
+    }
+}
+.nav a
+{
+    color:white;
+    text-decoration: none; 
+}
+
+.nav a:hover{
+    color:black;
+}
+.nav 
+{
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    background-color: dimgrey;
+    font-size: 1.1em;
+}
+.nav li
+{
+    padding: 30px;
+}
+
+.nav li:hover
+{
+    color: black;
+    background-color: darkgray;
+}
+.push
+{
+    margin-left:auto;
+}
+
+@media only screen and (max-width:700px)
+{
+    .nav
+    {
+        font-size:0.8em;
+    }
+    
+    .nav li
+    {
+        padding : 10px;
+    }
+}
+.body 
+{
+    display: flex;  
+}
+
+.col
+{
+    flex : 20%;
+    background-color: lawngreen;
+    margin : 0;
+}
+
+.colcontent
+{
+    display: column flex;
+    list-style-type: none;
+    font-size: 1.3em;
+    margin : 0 0;
+    color : white;
+    height : 70vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.colcontent li
+{
+    padding : 30px;
+    margin-left: -20px;
+}
+
+.colcontent li:hover{
+    color : black;
+    background-color: darkgreen;
+}
+
+@media only screen and (max-width:700px)
+{
+    .colcontent{
+        font-size: 0.9em;
+    }
+    .colcontent li
+    {
+        padding : 10px;
+    }
+}
+.main
+{
+    display: column flex;
+    flex:80%;
+    background-color: aliceblue;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main p
+{
+    font-size: 4em;
+    font-family: fantasy;
+    margin : auto;
+    color : black;
+}
+
+.grid-container
+{
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
+}
+.box
+{
+    border-radius:1px solid #bbb;
+    border-radius:4px;
+    width: 200px;
+    height: 200px;
+    background-color: grey;
+    padding : 20px;
+    margin : 20px;
+    box-shadow: rgba(0,0,0,0.8) 0px 5px 15px;
+    transition: all 0.5s;
+}
+
+.box > img
+{
+    width:100%;
+}
+
+.box:hover
+{
+    transform: rotate(6deg);
+    width: 210px;
+    height: 210px;
+}
+
+@media only screen and (max-width:700px)
+{
+    .main p{
+        font-size: 3em;
+    }
+    .box
+    {
+        width : 150px;
+        height: 150px;
+        padding: 10px;
+        margin : 10px;
+        
+    }
+    
+    .box:hover{
+        height: 160px;
+        width: 160px;
+    }
+}
